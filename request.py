@@ -1,6 +1,5 @@
 import requests
 
-# url = 'http://localhost:5000/predict_api'
 url = 'http://localhost:http://127.0.0.1/:80'
 r = requests.post(url,json={'potential':89, 'value_eur':98, 'wage_eur':456005, 'age': 89, 'height_cm':155,
 'weight_kg': 68, 'pace':87, 'shooting':79, 'passing':97, 'dribbling': 75, 'defending':77, 'physic': 66, 

@@ -17,52 +17,53 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
+		<caption><h3>Please enter scores below for prediction: </h3></caption>
     	<input type="text" name="potential" placeholder="Potential" required="required" />
-        <input type="text" name="value_eur" placeholder="Value_eur" required="required" />
-		<input type="text" name="wage_eur" placeholder="Wage_eur" required="required" />
+        <input type="text" name="value_eur" placeholder="Value in euros" required="required" />
+		<input type="text" name="wage_eur" placeholder="Wage in euros" required="required" />
     <input type="text" name="age" placeholder="Age" required="required" />
-		<input type="text" name="height_cm" placeholder="Height_cm" required="required" />
-		<input type="text" name="weight_kg" placeholder="Weight_kg" required="required" />
-		<input type="text" name="pace" placeholder="Pace" required="required" />
+		<input type="text" name="height_cm" placeholder="Height in cm" required="required" />
+		<input type="text" name="weight_kg" placeholder="Weightin kg" required="required" />
+		<input type="text" name="pace" placeholder="Pace" required="required" /><br><br>
 		<input type="text" name="shooting" placeholder="Shooting" required="required" />
 		<input type="text" name="passing" placeholder="Passing" required="required" />
 		<input type="text" name="dribbling" placeholder="Dribbling" required="required" />
 		<input type="text" name="defending" placeholder="defending" required="required" />
-		<input type="text" name="physic" placeholder="physic" required="required" />
-		<input type="text" name="attacking_crossing" placeholder="attacking_crossing" required="required" />
-		<input type="text" name="attacking_finishing" placeholder="attacking_finishing" required="required" />
-		<input type="text" name="attacking_heading_accuracy" placeholder="attacking_heading_accuracy" required="required" />
-		<input type="text" name="attacking_short_passing" placeholder="attacking_short_passing" required="required" />
-		<input type="text" name="attacking_volleys" placeholder="attacking_volleys" required="required" />
-		<input type="text" name="skill_dribbling" placeholder="skill_dribbling" required="required" />
-		<input type="text" name="skill_curve" placeholder="skill_curve" required="required" />
-		<input type="text" name="skill_fk_accuracy" placeholder="skill_fk_accuracy" required="required" />
-		<input type="text" name="skill_long_passing" placeholder="skill_long_passing" required="required" />
-    	<input type="text" name="skill_ball_control" placeholder="skill_ball_control" required="required" />
-		<input type="text" name="movement_acceleration" placeholder="movement_acceleration" required="required" />
-		<input type="text" name="movement_sprint_speed" placeholder="movement_sprint_speed" required="required" />
-		<input type="text" name="movement_agility" placeholder="movement_agility" required="required" />
-		<input type="text" name="movement_reactions" placeholder="movement_reactions" required="required" />
-		<input type="text" name="movement_balance" placeholder="movement_balance" required="required" />
-		<input type="text" name="power_shot_power" placeholder="power_shot_power" required="required" />
-		<input type="text" name="power_jumping" placeholder="power_jumping" required="required" />
-		<input type="text" name="power_stamina" placeholder="power_stamina" required="required" />
-		<input type="text" name="power_strength" placeholder="power_strength" required="required" />
-		<input type="text" name="power_long_shots" placeholder="power_long_shots" required="required" />
-   	 	<input type="text" name="mentality_aggression" placeholder="mentality_aggression" required="required" />
-		<input type="text" name="mentality_interceptions" placeholder="mentality_interceptions" required="required" />
-		<input type="text" name="mentality_positioning" placeholder="mentality_positioning" required="required" />
-		<input type="text" name="mentality_vision" placeholder="mentality_vision" required="required" />
-		<input type="text" name="mentality_penalties" placeholder="mentality_penalties" required="required" />
-		<input type="text" name="mentality_composure" placeholder="mentality_composure" required="required" />
-		<input type="text" name="defending_marking_awareness" placeholder="defending_marking_awareness" required="required" />
-		<input type="text" name="defending_standing_tackle" placeholder="defending_standing_tackle" required="required" />
-		<input type="text" name="defending_sliding_tackle" placeholder="defending_sliding_tackle" required="required" />
-		<input type="text" name="goalkeeping_diving" placeholder="goalkeeping_diving" required="required" />
-		<input type="text" name="goalkeeping_handling" placeholder="goalkeeping_handling" required="required" />
-		<input type="text" name="goalkeeping_kicking" placeholder="goalkeeping_kicking" required="required" />
-		<input type="text" name="goalkeeping_positioning" placeholder="goalkeeping_positioning" required="required" />
-		<input type="text" name="goalkeeping_reflexes" placeholder="goalkeeping_reflexes" required="required" />
+		<input type="text" name="physic" placeholder="Physic" required="required" />
+		<input type="text" name="attacking_crossing" placeholder="Attacking crossing" required="required" />
+		<input type="text" name="attacking_finishing" placeholder="Attacking finishing" required="required" /><br><br>
+		<input type="text" name="attacking_heading_accuracy" placeholder="Attacking heading accuracy" required="required" />
+		<input type="text" name="attacking_short_passing" placeholder="Attacking short passing" required="required" />
+		<input type="text" name="attacking_volleys" placeholder="Attacking volleys" required="required" />
+		<input type="text" name="skill_dribbling" placeholder="Skill dribbling" required="required" />
+		<input type="text" name="skill_curve" placeholder="Skill curve" required="required" />
+		<input type="text" name="skill_fk_accuracy" placeholder="Skill accuracy" required="required" />
+		<input type="text" name="skill_long_passing" placeholder="Skill long passing" required="required" /><br><br>
+    	<input type="text" name="skill_ball_control" placeholder="Skill ball control" required="required" />
+		<input type="text" name="movement_acceleration" placeholder="Movement acceleration" required="required" />
+		<input type="text" name="movement_sprint_speed" placeholder="Movement sprint speed" required="required" />
+		<input type="text" name="movement_agility" placeholder="Movement agility" required="required" />
+		<input type="text" name="movement_reactions" placeholder="Movement reactions" required="required" />
+		<input type="text" name="movement_balance" placeholder="Movement balance" required="required" />
+		<input type="text" name="power_shot_power" placeholder="Power shot power" required="required" /><br><br>
+		<input type="text" name="power_jumping" placeholder="Power jumping" required="required" />
+		<input type="text" name="power_stamina" placeholder="Power stamina" required="required" />
+		<input type="text" name="power_strength" placeholder="Power strength" required="required" />
+		<input type="text" name="power_long_shots" placeholder="Power long shots" required="required" />
+   	 	<input type="text" name="mentality_aggression" placeholder="Mentality aggression" required="required" />
+		<input type="text" name="mentality_interceptions" placeholder="Mentality interceptions" required="required" />
+		<input type="text" name="mentality_positioning" placeholder="Mentality positioning" required="required" /><br><br>
+		<input type="text" name="mentality_vision" placeholder="Mentality vision" required="required" />
+		<input type="text" name="mentality_penalties" placeholder="Mentality penalties" required="required" />
+		<input type="text" name="mentality_composure" placeholder="Mentality composure" required="required" />
+		<input type="text" name="defending_marking_awareness" placeholder="Defending marking awareness" required="required" />
+		<input type="text" name="defending_standing_tackle" placeholder="Defending standing tackle" required="required" />
+		<input type="text" name="defending_sliding_tackle" placeholder="Defending sliding tackle" required="required" />
+		<input type="text" name="goalkeeping_diving" placeholder="Goalkeeping diving" required="required" /><br><br>
+		<input type="text" name="goalkeeping_handling" placeholder="Goalkeeping handling" required="required" />
+		<input type="text" name="goalkeeping_kicking" placeholder="Goalkeeping kicking" required="required" />
+		<input type="text" name="goalkeeping_positioning" placeholder="Goalkeeping positioning" required="required" />
+		<input type="text" name="goalkeeping_reflexes" placeholder="Goalkeeping reflexes" required="required" /><br><br>
 		<!-- <input type="text" name="power_long_shots" placeholder="power_long_shots" required="required" /> -->
 
 

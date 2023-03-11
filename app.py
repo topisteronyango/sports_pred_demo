@@ -16,12 +16,12 @@ def predict():
     For rendering results on HTML GUI
     '''
     int_features = [int(x) for x in request.form.values()]
-    final_features = [np.array(int_features) / 100]
+    final_features = [np.array(int_features)]
     prediction = model.predict(final_features)
 
     output = round(prediction[0], 46)
 
-    return render_template('index.html', prediction_text='Model perfomance is: {}'.format(output))
+    return render_template('index.html', prediction_text='Player rating in % is: {}'.format(output))
 
 
 if __name__ == "__main__":
